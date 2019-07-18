@@ -1,0 +1,15 @@
+.carousel-control{
+  text-decoration: none !important;
+}
+
+#carouselcarousel{
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-carousel-plugin{
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+}
