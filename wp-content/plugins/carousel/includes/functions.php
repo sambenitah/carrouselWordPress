@@ -47,7 +47,6 @@ function init(){
                         navigation  bit NOT NULL,
                         autoplay bit NOT NULL,
                         delay float not null,
-                        direction bit not null,
                         text varchar(255) not null,
                         transition bit not null,
                         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -71,8 +70,8 @@ function init(){
     dbDelta($carousel_sql);
 
 
-    $results = $wpdb->get_results("insert into  wp_carousel (navigation,autoplay,direction,delay,text,transition) 
-    values (1,1,1,5,'',1)");
+    $results = $wpdb->get_results("insert into  wp_carousel (navigation,autoplay,delay,text,transition) 
+    values (1,1,5,'',1)");
 }
 
 function remove_database() {

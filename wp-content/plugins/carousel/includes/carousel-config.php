@@ -127,11 +127,6 @@ $config = $wpdb->get_row("select * from wp_carousel");
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input <?php if($config->direction) echo "checked" ?> type="checkbox" id="direction" name="direction"> Vertical Direction (default horizontal)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
                     <input <?php if($config->transition) echo "checked" ?> type="checkbox" id="transition" name="transition"> Fade Transition (default slide)
                 </label>
             </div>
